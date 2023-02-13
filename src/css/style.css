@@ -1,0 +1,51 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.collapse-button {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: #0264cc;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, 
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, 
+    box-shadow 0.15s ease-in-out;
+  user-select: none;
+}
+
+.collapse-button:hover {
+  background-color: #097efc;
+  cursor: pointer;
+}
+
+.collapse-button:focus {
+  box-shadow: rgba(46, 141, 241, 0.5) 0 0 0 0.2rem;
+}
+
+.collapse {
+  display: flex;
+  position: relative;
+  overflow-y: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.show {
+  transition: max-height 0.5s ease-in-out;
+}
+
+.collapse__body {
+  padding: 1.25rem;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
